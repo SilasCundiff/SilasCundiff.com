@@ -1,8 +1,9 @@
 import Image from "next/image";
 import localFont from "next/font/local";
+import TitleSVGComponent from "./components/title-svg";
 
 const rockyBillyFont = localFont({
-  src: "./Rockybilly.ttf",
+  src: "./assets/Rockybilly.ttf",
 });
 
 export default function Home() {
@@ -13,9 +14,10 @@ export default function Home() {
         className="hero w-full h-screen relative flex justify-center items-center flex-col"
       >
         <h1
-          className={`${rockyBillyFont.className} font-semibold text-4xl mb-16`}
+          className={`${rockyBillyFont.className} font-semibold text-6xl mb-16`}
+          title="Silas Cundiff"
         >
-          Silas Cundiff
+          <TitleSVGComponent />
         </h1>
         <h2 className="text-2xl font-normal">
           Full Stack Developer & Designer
@@ -29,18 +31,14 @@ export default function Home() {
           height="500"
         />
       </section>
-      <section
-        id="about"
-        className="about h-screen container bg-slate-100 mx-auto mt-24 p-8 rounded-t-lg"
-      >
-        <h2>About</h2>
-      </section>
-      <section
-        id="projects"
-        className="projects h-screen container bg-slate-100 mx-auto p-8 rounded-b-lg mb-24"
-      >
-        <h2>Projects</h2>
-      </section>
+      <div className=" container  mx-auto my-24 p-8 rounded-lg shadow-slate-200 shadow-lg">
+        <section id="about" className="about h-screen ">
+          <h2>About</h2>
+        </section>
+        <section id="projects" className="projects h-screen">
+          <h2>Projects</h2>
+        </section>
+      </div>
     </main>
   );
 }

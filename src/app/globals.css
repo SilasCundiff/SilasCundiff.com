@@ -33,3 +33,72 @@ body {
 
   scroll-behavior: smooth;
 }
+
+.mask {
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+@keyframes strokeOffset {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#mask-S {
+  animation: strokeOffset 0.75s ease-in forwards 0.75s;
+}
+
+#mask-i1 {
+  animation: strokeOffset 0.75s ease-out forwards 1.5s;
+}
+
+#mask-l {
+  animation: strokeOffset 0.5s ease-in forwards 1.75s;
+}
+
+#mask-a {
+  animation: strokeOffset 0.75s ease-in-out forwards 2s;
+}
+
+#mask-s {
+  animation: strokeOffset 0.75s ease-in-out forwards 2.25s;
+}
+
+#mask-i-dot1 {
+  animation: strokeOffset 0.75s ease-in forwards 2.5s;
+}
+
+#mask-C {
+  animation: strokeOffset 1.25s ease-in-out forwards 2.75s;
+}
+
+#mask-u {
+  animation: strokeOffset 0.75s ease-in forwards 3.35s;
+}
+
+#mask-n {
+  animation: strokeOffset 1s ease-in-out forwards 3.75s;
+}
+
+#mask-d {
+  animation: strokeOffset 1s ease-out forwards 4.25s;
+}
+
+#mask-i2 {
+  animation: strokeOffset 0.75s ease-in-out forwards 4.5s;
+}
+
+#mask-i-dot2 {
+  animation: strokeOffset 0.75s ease-out forwards 5.5s;
+}
+
+#mask-f1 {
+  animation: strokeOffset 1s ease-in-out forwards 4.75s;
+}
+
+#mask-f2 {
+  animation: strokeOffset 0.75s ease-in-out forwards 5.25s;
+}

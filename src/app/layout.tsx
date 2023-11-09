@@ -20,9 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppinsFont.className}`}>
+      <body className={`${poppinsFont.className} text-slate-900`}>
         <header className="flex justify-center items-center w-full p-4 fixed top-0 left-1/2 translate-x-[-50%] z-10">
-          <nav className="flex items-center space-x-4 text-slate-800">
+          <nav className="flex items-center space-x-4 ">
             <a className="font-light text-xl" href="#about">
               About
             </a>
