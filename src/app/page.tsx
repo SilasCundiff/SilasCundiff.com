@@ -11,25 +11,15 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between text-slate-800">
       <section
         id="home"
-        className="hero w-full h-screen relative flex justify-center items-center flex-col"
+        className="hero w-full min-h-screen relative flex justify-center items-center flex-col p-4"
       >
-        <h1
-          className={`${rockyBillyFont.className} font-semibold text-6xl mb-16`}
-          title="Silas Cundiff"
-        >
+        <div className="card shadow-lg p-6 absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] max-h-[300px] lg:max-h-[510px] h-full max-w-[600px] lg:max-w-[900px] flex justify-center items-center flex-col">
+          <h1 className="invisible">Silas Cundiff</h1>
           <TitleSVGComponent />
-        </h1>
-        <h2 className="text-2xl font-normal">
-          Full Stack Developer & Designer
-        </h2>
-        {/* hero image background */}
-        <Image
-          className="absolute inset-0 w-full h-full object-cover z-[-1]"
-          alt="white paper background"
-          src="/assets/white-background.jpg"
-          width="500"
-          height="500"
-        />
+          <h2 className="lg:text-3xl md:text-2xl text-xl font-normal -mt-8">
+            Full Stack Developer & Designer
+          </h2>
+        </div>
       </section>
       <div className=" container  mx-auto my-24 p-8 rounded-lg shadow-slate-200 shadow-lg">
         <section id="about" className="about h-screen ">

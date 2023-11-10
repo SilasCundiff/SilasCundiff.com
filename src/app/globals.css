@@ -34,6 +34,12 @@ body {
   scroll-behavior: smooth;
 }
 
+.card {
+  width: 100%;
+  background-image: url("assets/kiwihug-zGZYQQVmXw0-unsplash-edited.jpg");
+  background-size: cover;
+}
+
 .mask {
   fill: none;
   stroke: #fff;
