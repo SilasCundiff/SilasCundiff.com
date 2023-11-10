@@ -7,12 +7,11 @@
   src: url("assets/fonts/RockyBilly.ttf") format("ttf");
 } */
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 245, 247, 246;
   --background-end-rgb: 200, 200, 246;
-  color: #f5f7f6;
-}
+} */
 /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -45,7 +44,7 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0.5;
-  /* background-image: url("assets/bg.jpg"); */
+  background-image: url("assets/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,7 +53,7 @@ body {
 
 .card {
   width: 100%;
-  /* background-image: url("assets/kiwihug-zGZYQQVmXw0-unsplash-edited.jpg"); */
+  background-image: url("assets/kiwihug-zGZYQQVmXw0-unsplash-edited.jpg");
   background-size: cover;
 }
 
