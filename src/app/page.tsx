@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className="invisible">Silas Cundiff</h1>
           <TitleSVGComponent />
           <h2 className="lg:text-3xl md:text-2xl text-xl text-sky-700 font-semibold -mt-8 mb-8">
-            Web Developer & Designer
+            Leaving my mark on the web
           </h2>
           <div className="flex gap-4">
             <a
