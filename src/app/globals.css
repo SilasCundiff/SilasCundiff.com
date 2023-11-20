@@ -25,12 +25,12 @@ html {
 }
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom right,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 
   scroll-behavior: smooth;
 }
@@ -52,8 +52,8 @@ body {
 }
 
 .card {
-  width: 100%;
-  background-image: url("assets/kiwihug-zGZYQQVmXw0-unsplash-edited.jpg");
+  /* width: 100%; */
+  /* background-image: url("assets/kiwihug-zGZYQQVmXw0-unsplash-edited.jpg"); */
   background-size: cover;
 }
 
@@ -74,6 +74,10 @@ body {
   to {
     stroke-dashoffset: 0;
   }
+}
+
+.container {
+  max-width: 900px;
 }
 
 #mask-S {
