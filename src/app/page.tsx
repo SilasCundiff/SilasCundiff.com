@@ -3,7 +3,8 @@ import ProjectCard from "./components/ProjectCard";
 
 const testProject = {
   title: "Test Project",
-  description: "This is a test project",
+  description:
+    "This is a test project, this is a longer description explaining what the card contains",
   url: "https://silascundiff.com",
   githubUrl: "https://silascundiff.com",
   imgUrl:

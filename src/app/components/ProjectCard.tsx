@@ -15,15 +15,25 @@ const ProjectCard = ({ project }: { project: Project }) => {
         className="card-img-top w-full max-h-[800px] object-cover rounded-lg"
         alt={project.title}
       />
-      <div className="opacity-100 hover:opacity-100 transition-opacity card-body absolute z-10 inset-0 rounded-lg bg-sky-200 bg-opacity-50">
-        <h3 className="card-title text-2xl">{project.title}</h3>
-        <p className="card-text">{project.description}</p>
-        <a href={project.url} className="btn btn-primary">
-          Go to project
-        </a>
-        <a href={project.githubUrl}>View on GitHub</a>
-        <div>
-          <ul className="skill-list">
+      <div className="opacity-0 w-full flex flex-col p-4 hover:opacity-100 transition-opacity card-body absolute z-10 inset-0 rounded-lg bg-sky-50 bg-opacity-75">
+        <h3 className="card-title text-2xl mt-4 font-bold">{project.title}</h3>
+        <p className="card-text text-xl mb-2 max-w-xl">{project.description}</p>
+        <div className="flex gap-4 mb-auto">
+          <a
+            href={project.url}
+            className="bg-sky-500 text-sky-50 px-4 py-2 rounded-lg "
+          >
+            Demo
+          </a>
+          <a
+            href={project.githubUrl}
+            className="bg-sky-500 text-sky-50 px-4 py-2 rounded-lg "
+          >
+            GitHub
+          </a>
+        </div>
+        <div className="py-2 px-2 border-t-sky-950 border-t-2">
+          <ul className="skill-list flex gap-4">
             {project.skills.map((skill, i) => (
               <li key={skill + i}>{skill}</li>
             ))}
