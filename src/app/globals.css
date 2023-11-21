@@ -88,7 +88,7 @@ body {
   max-width: 100%;
 }
 
-.carousel {
+.carousel-wrapper {
   scrollbar-width: none;
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
