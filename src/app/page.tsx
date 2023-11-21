@@ -1,3 +1,4 @@
+import Carousel from "./components/Carousel";
 import ProjectCard from "./components/ProjectCard";
 
 const testProject = {
@@ -45,13 +46,30 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className=" container mx-auto my-24 p-8 rounded-lg shadow-slate-200">
+      <div className="container-full flex">
         <section id="projects" className="projects my-24 text-sky-50 ">
-          <h2 className="text-4xl text-sky-200 font-bold pb-4 mt-20">
-            Projects
-          </h2>
-          <ProjectCard project={testProject} />
+          <div className="container mx-auto pb-4">
+            <h2 className="text-4xl text-sky-200 font-bold pb-4 mt-20">
+              Projects
+            </h2>
+          </div>
+          <Carousel>
+            <ProjectCard project={testProject} />
+            <ProjectCard project={testProject} />
+            <ProjectCard project={testProject} />
+            <ProjectCard project={testProject} />
+            <ProjectCard project={testProject} />
+            <ProjectCard project={testProject} />
+            <ProjectCard project={testProject} />
+            <ProjectCard project={testProject} />
+            <ProjectCard project={testProject} />
+            <ProjectCard project={testProject} />
+            <ProjectCard project={testProject} />
+            <ProjectCard project={testProject} />
+          </Carousel>
         </section>
+      </div>
+      <div className="container mx-auto my-24 p-8 rounded-lg shadow-slate-200">
         <section id="about" className="about flex flex-col">
           <div className="flex flex-wrap">
             <h2 className="text-4xl text-sky-200 font-bold pb-4 mt-20">

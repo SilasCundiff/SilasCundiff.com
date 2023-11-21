@@ -80,6 +80,22 @@ body {
   max-width: 900px;
 }
 
+.container-lg {
+  max-width: 1200px;
+}
+
+.container-full {
+  max-width: 100%;
+}
+
+.carousel {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 #mask-S {
   animation: strokeOffset 0.75s ease-in forwards 0.75s;
 }
