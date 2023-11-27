@@ -14,7 +14,7 @@ Features:
    - current() - returns the current index (if an animation is in-progress, it reflects the final index)
    - times - an Array of the times on the timeline where each element hits the "starting" spot.
  */
-export const horizontalLoop = (items, config, loop) => {
+export const horizontalLoop = (items, config) => {
   items = gsap.utils.toArray(items);
   config = config || {};
   let tl = gsap.timeline({

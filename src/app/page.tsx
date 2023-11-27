@@ -9,13 +9,13 @@ export default function Home() {
       >
         <div className="container">
           <h2 className="text-4xl text-sky-200 font-bold pb-4">
-            Hey, I'm silas!
+            Hey, I&apos;m silas!
           </h2>
           <div className="flex flex-wrap text-sky-50">
             <div className="about-description basis-full ">
               <p className="text-xl pb-4 leading-8">
-                I'm a Full-stack Web developer with a passion for designing and
-                developing beautiful websites and apps! My strengths are in
+                I&apos;m a Full-stack Web developer with a passion for designing
+                and developing beautiful websites and apps! My strengths are in
                 front-end development, utilizing CSS and JavaScript to breath
                 life into design.
               </p>
@@ -28,8 +28,8 @@ export default function Home() {
                 country. With the occasional React projects.
               </p>
               <p className="text-xl pb-4 leading-8">
-                Now I'm looking for a new position, where I can work with cool
-                people to build awesome things!
+                Now I&apos;m looking for a new position, where I can work with
+                cool people to build awesome things!
               </p>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function Home() {
                   <li>PHP & MySQL</li>
                   <li>Figma & Adobe XD</li>
                   <li>Adobe Photoshop & Illustrator</li>
-                  <li>Google (it's an important skill!)</li>
+                  <li>Google (it&apos;s an important skill!)</li>
                 </ul>
               </div>
               <div className=" p-4 rounded-lg  shadow-lg bg-sky-50">
@@ -83,7 +83,7 @@ export default function Home() {
               </div>
               <div className=" p-4 rounded-lg  shadow-lg bg-sky-50">
                 <h3 className="text-violet-600 text-2xl font-semibold">
-                  Things I've dabbled in
+                  Things I&apos;ve dabbled in
                 </h3>
                 <ul className="skill-list flex gap-4">
                   <li>GoLang</li>
@@ -93,7 +93,7 @@ export default function Home() {
               </div>
               <div className=" p-4 rounded-lg  shadow-lg bg-sky-50">
                 <h3 className="text-pink-600 text-2xl font-semibold">
-                  Things I'd love to learn
+                  Things I&apos;d love to learn
                 </h3>
                 <ul className="skill-list flex gap-4">
                   <li>Three.JS</li>

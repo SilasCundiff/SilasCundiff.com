@@ -44,7 +44,6 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0.5;
-  /* background-image: url("assets/bg.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,8 +51,6 @@ body {
 }
 
 .card {
-  /* width: 100%; */
-  /* background-image: url("assets/kiwihug-zGZYQQVmXw0-unsplash-edited.jpg"); */
   background-size: cover;
 }
 
@@ -61,19 +58,6 @@ body {
   display: inline-block;
   padding: 0.5rem 0;
   font-size: 1.2rem;
-}
-
-.mask {
-  fill: none;
-  stroke: #fff;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-}
-
-@keyframes strokeOffset {
-  to {
-    stroke-dashoffset: 0;
-  }
 }
 
 .container {
@@ -88,66 +72,10 @@ body {
   max-width: 100%;
 }
 
-.carousel-wrapper {
+.carousel-container {
   scrollbar-width: none;
   -ms-overflow-style: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
 }
-
-#mask-S {
-  animation: strokeOffset 0.75s ease-in forwards 0.75s;
-}
-
-#mask-i1 {
-  animation: strokeOffset 0.75s ease-out forwards 1.5s;
-}
-
-#mask-l {
-  animation: strokeOffset 0.5s ease-in forwards 1.75s;
-}
-
-#mask-a {
-  animation: strokeOffset 0.75s ease-in-out forwards 2s;
-}
-
-#mask-s {
-  animation: strokeOffset 0.75s ease-in-out forwards 2.25s;
-}
-
-#mask-i-dot1 {
-  animation: strokeOffset 0.75s ease-in forwards 2.5s;
-}
-
-#mask-C {
-  animation: strokeOffset 1.25s ease-in-out forwards 2.75s;
-}
-
-#mask-u {
-  animation: strokeOffset 0.75s ease-in forwards 3.35s;
-}
-
-#mask-n {
-  animation: strokeOffset 1s ease-in-out forwards 3.75s;
-}
-
-#mask-d {
-  animation: strokeOffset 1s ease-out forwards 4.25s;
-}
-
-#mask-i2 {
-  animation: strokeOffset 0.75s ease-in-out forwards 4.5s;
-}
-
-#mask-i-dot2 {
-  animation: strokeOffset 0.75s ease-out forwards 5.5s;
-}
-
-#mask-f1 {
-  animation: strokeOffset 1s ease-in-out forwards 4.75s;
-}
-
-#mask-f2 {
-  animation: strokeOffset 0.75s ease-in-out forwards 5.25s;
+.carousel-container::-webkit-scrollbar {
+  display: none;
 }
