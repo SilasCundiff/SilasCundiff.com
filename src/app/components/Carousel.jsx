@@ -15,7 +15,6 @@ const testProject = {
   skills: ["React", "Next", "Tailwind"],
 };
 
-// TODO: Add controls to pause/play, and to go to next/previous card
 const Carousel = () => {
   const containerRef = useRef(null);
   const ctxRef = useRef();
@@ -178,7 +177,7 @@ const Carousel = () => {
 
   useLayoutEffect(() => {
     gsap.registerPlugin(Draggable);
-    ctxRef.current = gsap.context((self) => {
+    ctxRef.current = gsap.context(() => {
       const container = gsap.utils.selector(containerRef.current);
       const cards = gsap.utils.toArray(container(".card"));
 
@@ -191,7 +190,8 @@ const Carousel = () => {
         center: true,
         repeat: -1,
         ease: "linear",
-        draggable: true,
+        draggable: false, // removed for now until I write a custom snap function that works with Draggable
+        snap: 1,
       });
 
       return () => ctx.revert();
@@ -200,14 +200,14 @@ const Carousel = () => {
 
   const nextBtnClickHandler = () => {
     loop.current.vars.draggable = false;
-    loop.current.next({ duration: 0.5 }).then(() => {
+    loop.current.next({ duration: 0.4, ease: "power1.inOut" }).then(() => {
       loop.current.vars.draggable = true;
     });
   };
 
   const prevBtnClickHandler = () => {
     loop.current.vars.draggable = false;
-    loop.current.previous({ duration: 0.5 }).then(() => {
+    loop.current.previous({ duration: 0.4, ease: "power1.inOut" }).then(() => {
       loop.current.vars.draggable = true;
     });
   };
@@ -229,14 +229,15 @@ const Carousel = () => {
         </button>
       </div>
       <div
-        className="carousel-container flex max-w-[900px] overflow-x-scroll"
+        className="carousel-container flex max-w-[900px] items-center justify-center overflow-hidden"
         ref={containerRef}
       >
         <div className="proxy" ref={proxy}></div>
-        <ProjectCard project={testProject} num="1" />
-        <ProjectCard project={testProject} num="2" />
-        <ProjectCard project={testProject} num="3" />
-        <ProjectCard project={testProject} num="4" />
+        <ProjectCard project={testProject} />
+        <ProjectCard project={testProject} />
+        <ProjectCard project={testProject} />
+        <ProjectCard project={testProject} />
+        <ProjectCard project={testProject} />
       </div>
     </div>
   );

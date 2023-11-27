@@ -7,7 +7,7 @@ export type Project = {
   skills: string[];
 };
 
-const ProjectCard = ({ project, num }: { project: Project; num: String }) => {
+const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <div className="card p-4">
       <div className="rounded-lg shadow-lg bg-sky-50 text-sky-950 relative md:min-w-[600px] min-w-300">
@@ -16,8 +16,6 @@ const ProjectCard = ({ project, num }: { project: Project; num: String }) => {
           className="card-img-top w-full max-h-[800px] object-cover rounded-lg"
           alt={project.title}
         />
-
-        {num}
         <div className="opacity-0 w-full flex flex-col p-4 hover:opacity-100 transition-opacity card-body absolute z-10 inset-0 rounded-lg bg-sky-50 bg-opacity-75">
           <h3 className="card-title text-2xl mt-4 font-bold">
             {project.title}

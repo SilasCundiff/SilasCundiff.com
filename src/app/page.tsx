@@ -5,7 +5,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between text-slate-50">
       <section
         id="home"
-        className="hero w-full min-h-[900px] relative flex justify-center items-center flex-col p-4"
+        className="hero w-full min-h-[900px] mb-18 relative flex justify-center items-center flex-col p-4"
       >
         <div className="container">
           <h2 className="text-4xl text-sky-200 font-bold pb-4">
@@ -17,26 +17,17 @@ export default function Home() {
                 I&apos;m a Full-stack Web developer with a passion for designing
                 and developing beautiful websites and apps! My strengths are in
                 front-end development, utilizing CSS and JavaScript to breath
-                life into design.
+                life into designs.
               </p>
               <p className="text-xl pb-4 leading-8">
-                My go-to stacks is React with Next + Tailwind.
-              </p>
-              <p className="text-xl pb-4 leading-8">
-                For the past two years, I worked for a company called Polyglot.
-                Providing high quality WordPress websites to clients around the
-                country. With the occasional React projects.
-              </p>
-              <p className="text-xl pb-4 leading-8">
-                Now I&apos;m looking for a new position, where I can work with
-                cool people to build awesome things!
+                My go-to stack is React with Next + Tailwind.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <div className="container-full flex">
-        <section id="projects" className="projects my-24 text-sky-50 ">
+      <div className="container-full flex ">
+        <section id="projects" className="projects my-12 text-sky-50 ">
           <div className="container mx-auto pb-4">
             <h2 className="text-4xl text-sky-200 font-bold pb-4 mt-20">
               Projects
@@ -45,8 +36,26 @@ export default function Home() {
           <Carousel />
         </section>
       </div>
-      <div className="container mx-auto my-24 p-8 rounded-lg shadow-slate-200">
+      <div className="container mx-auto my-12 rounded-lg shadow-slate-200">
         <section id="about" className="about flex flex-col">
+          <div>
+            <h2 className="text-4xl text-sky-200 font-bold pb-4 mt-20">
+              About me
+            </h2>
+            <p className="text-xl pb-4 leading-8">
+              For the past two years, I worked for a company called Polyglot.
+              Providing high quality WordPress websites to clients around the
+              country. With the occasional React projects.
+            </p>
+            <p className="text-xl pb-4 leading-8">
+              Now I&apos;m looking for a new position, where I can work with
+              cool people to build awesome things!
+            </p>
+          </div>
+        </section>
+      </div>
+      <div className="container mx-auto my-12  rounded-lg shadow-slate-200">
+        <section className="tools flex flex-col">
           <div className="flex flex-wrap">
             <h2 className="text-4xl text-sky-200 font-bold pb-4 mt-20">
               Tech & Tools
@@ -56,7 +65,7 @@ export default function Home() {
                 <h3 className="text-sky-600 text-2xl font-semibold">
                   My Preffered Skills & Tools
                 </h3>
-                <ul className="skill-list">
+                <ul className="skill-list text-sky-950">
                   <li>JavaScript/TypeScript & React/Next.js</li>
                   <li>CSS/SCSS/Tailwind/Bootstrap</li>
                   <li>WordPress (plugin, theme, and block development)</li>
@@ -71,7 +80,7 @@ export default function Home() {
                 <h3 className="text-emerald-600 text-2xl font-semibold">
                   Additional tools & Skills
                 </h3>
-                <ul className="skill-list">
+                <ul className="skill-list text-sky-950">
                   <li>Git & GitHub</li>
                   <li>VScode and WSL is my preffered environment</li>
                   <li>I like Docker for WP sites</li>
@@ -85,7 +94,7 @@ export default function Home() {
                 <h3 className="text-violet-600 text-2xl font-semibold">
                   Things I&apos;ve dabbled in
                 </h3>
-                <ul className="skill-list flex gap-4">
+                <ul className="skill-list text-sky-950 flex gap-4">
                   <li>GoLang</li>
                   <li>Java</li>
                   <li>C#</li>
@@ -95,7 +104,7 @@ export default function Home() {
                 <h3 className="text-pink-600 text-2xl font-semibold">
                   Things I&apos;d love to learn
                 </h3>
-                <ul className="skill-list flex gap-4">
+                <ul className="skill-list text-sky-950 flex gap-4">
                   <li>Three.JS</li>
                   <li>Svelte</li>
                   <li>Bun</li>
