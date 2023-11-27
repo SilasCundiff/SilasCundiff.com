@@ -3,6 +3,7 @@ import React, { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
 import ProjectCard from "./ProjectCard";
+import { projects } from "../utils/projects.js";
 
 const testProject = {
   title: "Test Project",
@@ -233,11 +234,9 @@ const Carousel = () => {
         ref={containerRef}
       >
         <div className="proxy" ref={proxy}></div>
-        <ProjectCard project={testProject} />
-        <ProjectCard project={testProject} />
-        <ProjectCard project={testProject} />
-        <ProjectCard project={testProject} />
-        <ProjectCard project={testProject} />
+        {projects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
       </div>
     </div>
   );
