@@ -1,12 +1,15 @@
 export const projects = [
   {
-    title: "Zenify",
+    title: "Zenify V2",
     description:
-      'The first version of a Spotify Visualizer that I built. It uses Spotify\'s API to allow a user to listen to music and on screen particles would "dance" to the music!',
+      "Zenify V2 is a complete recreation (Heavily WIP) of my first Spotify Particle Visualizer app. It uses Spotify API and OAuth, and Particle JS. The Particles in the background will change based on the music.",
+    challenge:
+      "The hard part isn't the OAuth, or the Spotify API. It's getting the visualizer to sync with the song.",
+    outcome:
+      "The outcome is still a work in progress. I know exactly what needs to be done to finish it, since I've already done it in the past with the previous Zenify. I just need to find the time to finish it.",
     url: "unavailable",
     githubUrl: "https://silascundiff.com",
-    imgUrl:
-      "https://images.unsplash.com/photo-1682687981974-c5ef2111640c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8",
+    imgUrl: "./assets/ZenifyV2.png",
     skills: ["React", "Spotify API", "Particle.js", "Styled Components"],
   },
   {
