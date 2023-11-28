@@ -7,8 +7,7 @@ export const projects = [
       "The hard part isn't the OAuth, or the Spotify API. It's getting the visualizer to sync with the song.",
     outcome:
       "The outcome is still a work in progress. I know exactly what needs to be done to finish it, since I've already done it in the past with the previous Zenify. I just need to find the time to finish it.",
-    url: "unavailable",
-    githubUrl: "https://silascundiff.com",
+    githubUrl: "https://github.com/SilasCundiff/ZenifyV2",
     imgUrl: "./assets/ZenifyV2.png",
     skills: ["React", "Spotify API", "Particle.js", "Styled Components"],
   },
@@ -36,5 +35,50 @@ export const projects = [
     url: "https://AnnaGriffin.com",
     imgUrl: "./assets/AnnaGriffin.png",
     skills: ["WordPress", "SCSS", "WooCommerce", "PHP", "K6", "Grafana"],
+  },
+  {
+    title: "Cuisine Quest",
+    description:
+      "A recipe search app using Spoonacular API. This site is no longer hosted, but the code is still available on GitHub.",
+    challenge:
+      "This app needed to store users preferences in a database to improve search results, it has the ability to blacklist ingredients, favorite recipes, and add intolerances to avoid.",
+    outcome:
+      "The hardest part was getting the data to sync properly between the UI and the database. I used Firebase, and after some initial setup, favoriting recipes and blacklisting ingredients would sync in real time, so you can favorite something on your phone and immediately see it pop up on your desktop browser.",
+    githubUrl: "https://github.com/SilasCundiff/cuisinequest--next",
+    imgUrl: "./assets/CuisineQuestV2.png",
+    skills: ["React", "Next", "Tailwind", "Spoonacular API", "Firebase"],
+  },
+  {
+    title: "Rhonda Haran",
+    description:
+      "This is one of half a dozen realty websites I helped develop for Polyglot. It uses WordPress and an in-house plugin/theme combo to pull in data from the MLS and display it in a user friendly way.",
+    challenge:
+      "Various challenges included developing from a design, integrating new MLS listing features, updating the theme, and creating new templates.",
+    outcome:
+      "The results are a working website with the ability to search for listings and contact agents. It's a like a personalized Zillow for specific realtors.",
+    url: "https://rhonda-haran.com/",
+    imgUrl: "./assets/RhondaHaran.png",
+    skills: ["React", "Next", "Tailwind", "Spoonacular API", "Firebase"],
+  },
+  {
+    title: "Various WordPress sites",
+    description:
+      "Over my time at Polyglot Labs, I helped develop, update, and maintain over 50 WordPress sites. Ranging from small local sites such as ingriffin.com, to large scale eCommerce sites such as Anna Griffin.",
+    challenge:
+      "Various challenges included developing from a design, porting legacy sites to newer versions of WordPress/PHP, updating themes, and creating new templates/blocks, debugging, cleaning hacked sites, moving sites from one server to another, etc. I also helped update our in house theme to use webpack instead of gulp.",
+    url: "https://ingriffin.com/",
+    imgUrl: "./assets/ingriffin.png",
+    skills: ["WordPress", "SCSS", "WooCommerce", "PHP", "Docker"],
+  },
+  {
+    title: "Zelena Cidx importer - Real Estate",
+    description:
+      "I was given the task to create a frontend tool our developers could use to reimport MLS data for listing that were out of sync on our various MLS websites. Unfortunately, I can't show the full working site because it requires VPN access, but I can show the UI and explain some of the code.",
+    challenge:
+      "We wanted something fast that could remotely call backend functions if needed. We also wanted to be able to see the status of each listing as it was being imported.",
+    outcome:
+      "I designed and developed the frontend UI completely from scratch in React and Tailwind, and use gRPC to communicate with a go backend. I created some of the backend functionality as well, allowing users to search for listing in our database and displaying their information in search results.",
+    imgUrl: "./assets/Zelena.png",
+    skills: ["React", "Tailwind", "gRPC", "Go", "Docker", "mongoDB"],
   },
 ];
