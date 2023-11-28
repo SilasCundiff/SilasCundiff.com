@@ -1,8 +1,8 @@
 "use client";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import debounce from "../utils/debounce";
 
+// <FontAwesomeIcon icon="fa-brands fa-linkedin" />
 const Navbar = () => {
   const [scrolledFromTop, setScrolledFromTop] = useState(false);
 

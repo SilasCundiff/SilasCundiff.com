@@ -1,3 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import IconLink from "./IconLink";
+
 export type Project = {
   title: string;
   description: string;
@@ -18,11 +23,27 @@ const ProjectCard = ({ project }: { project: Project }) => {
           className="card-img-top w-full h-[600px] object-cover rounded-lg"
           alt={project.title}
         />
-        <div className="opacity-0 w-full flex flex-col p-4 hover:opacity-100 transition-opacity card-body absolute z-10 inset-0 rounded-lg bg-sky-50 bg-opacity-75">
-          <h3 className="card-title text-2xl mt-4 font-bold">
-            {project.title}
-          </h3>
-          <p className="card-text text-xl mb-2 max-w-xl">
+        <div className="opacity-0 w-full flex flex-col p-4 hover:opacity-100 transition-opacity card-body absolute z-10 inset-0 rounded-lg bg-sky-100 bg-opacity-75 backdrop-blur">
+          <div className="flex justify-between items-baseline mb-4">
+            <h3 className="card-title text-4xl font-bold">{project.title}</h3>
+            <div className="flex gap-2">
+              {project.url && (
+                <>
+                  <IconLink href={project.url} variant="black">
+                    <FontAwesomeIcon icon={faLink} size="2xl" />
+                  </IconLink>
+                </>
+              )}
+              {project.githubUrl && (
+                <>
+                  <IconLink href={project.githubUrl} variant="black">
+                    <FontAwesomeIcon icon={faGithub} size="2xl" />
+                  </IconLink>
+                </>
+              )}
+            </div>
+          </div>
+          <p className="card-text text-xl mb-4 max-w-xl">
             {project.description}
           </p>
           <div className="border-t-sky-950 border-t-2 pt-4">
@@ -47,29 +68,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
               </>
             )}
           </div>
-          <div className="flex gap-4 mt-auto mb-4">
-            {project.url && (
-              <>
-                <a
-                  href={project.url}
-                  className="bg-sky-500 text-sky-50 px-4 py-2 rounded-lg "
-                >
-                  Demo
-                </a>
-              </>
-            )}
-            {project.githubUrl && (
-              <>
-                <a
-                  href={project.githubUrl}
-                  className="bg-sky-500 text-sky-50 px-4 py-2 rounded-lg "
-                >
-                  GitHub
-                </a>
-              </>
-            )}
-          </div>
-          <div className="py-2 px-2 border-t-sky-950 border-t-2">
+          <div className="py-2 px-2 border-t-sky-950 border-t-2  mt-auto">
             <ul className="skill-list flex gap-4">
               {project.skills.map((skill, i) => (
                 <li key={skill + i}>{skill}</li>
