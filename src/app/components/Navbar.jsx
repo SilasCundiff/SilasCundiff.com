@@ -34,8 +34,8 @@ const Navbar = () => {
         scrolledFromTop ? "bg-opacity-100 text-sky-950" : "bg-opacity-0"
       }`}
     >
-      <div className="container flex justify-center items-center">
-        <a className="mr-auto -ml-2 flex" href="#home">
+      <div className="container flex md:flex-row flex-col justify-center items-center">
+        <a className="md:mr-auto mb-4 md:mb-0 -ml-2 flex" href="#home">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 708.6 579.03"

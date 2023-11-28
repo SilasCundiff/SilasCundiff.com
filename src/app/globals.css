@@ -61,15 +61,26 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  max-width: calc(900px + 2rem);
+  width: 100%;
+  padding-inline: 2rem;
 }
 
 .container-lg {
-  max-width: 1200px;
+  max-width: calc(1200px + 2rem);
+  padding-inline: 2rem;
 }
 
 .container-full {
-  max-width: 100%;
+  max-width: calc(100% - 2rem);
+  padding-inline: 2rem;
+}
+
+/* media query for 990px and below */
+@media (max-width: 990px) {
+  .container-full {
+    max-width: unset;
+  }
 }
 
 .carousel-container {

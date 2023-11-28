@@ -4,6 +4,11 @@ import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
 import ProjectCard from "./ProjectCard";
 import { projects } from "../utils/projects.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronCircleLeft,
+  faChevronCircleRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Carousel = () => {
   const containerRef = useRef(null);
@@ -203,23 +208,23 @@ const Carousel = () => {
   };
 
   return (
-    <div className="carousel-wrapper max-w-[1200px] relative">
-      <div className="carousel-controls flex gap-4 justify-between">
+    <div className="carousel-wrapper md:max-w-[1200px] relative">
+      <div className="carousel-controls flex gap-4 justify-between absolute w-full z-10 top-1/2 translate-y-[-50%]">
         <button
-          className="carousel-control prev"
+          className="carousel-control prev bg-black bg-opacity-50 p-2 ml-4 rounded-full hidden md:block"
           onClick={() => prevBtnClickHandler()}
         >
-          Previous
+          <FontAwesomeIcon icon={faChevronCircleLeft} size="2xl" />
         </button>
         <button
-          className="carousel-control next"
+          className="carousel-control next bg-black bg-opacity-50 p-2 mr-4 rounded-full hidden md:block"
           onClick={() => nextBtnClickHandler()}
         >
-          Next
+          <FontAwesomeIcon icon={faChevronCircleRight} size="2xl" />
         </button>
       </div>
       <div
-        className="carousel-container flex max-w-[900px] items-center justify-center overflow-hidden"
+        className="carousel-container flex md:max-w-[900px] items-center justify-center overflow-hidden  md:flex-row flex-col"
         ref={containerRef}
       >
         <div className="proxy" ref={proxy}></div>

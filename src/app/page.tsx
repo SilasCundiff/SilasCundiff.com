@@ -5,22 +5,22 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between text-slate-50">
+    <main className="flex flex-col items-center justify-between text-slate-50">
       <section
         id="home"
-        className="hero w-full h-[600px] mb-10 relative flex justify-center items-center flex-col p-4 pt-16 mt-24 "
+        className="hero w-full h-[600px] mb-10 relative flex justify-center items-center flex-col p-4 pt-16 mt-24"
       >
         <div className="container">
           <h2 className="text-4xl text-sky-300 font-bold pb-4 tracking-wider">
             Hey, I&apos;m silas!
           </h2>
           <div className="flex flex-wrap text-sky-50">
-            <div className="about-description basis-full ">
-              <p className="text-xl pb-2 leading-8 tracking-wide w-[50ch]">
+            <div className="about-description ">
+              <p className="text-xl pb-2 leading-8 tracking-wide max-w-[50ch]">
                 I&apos;m a Full-stack Web developer with a passion for designing
                 and developing beautiful websites and apps!
               </p>
-              <p className="text-xl pb-2 leading-8 tracking-wide w-[50ch]">
+              <p className="text-xl pb-2 leading-8 tracking-wide max-w-[50ch]">
                 My go-to stack is React with Next + Tailwind, and I have two
                 years of experience with WordPress theme development.
               </p>
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </section>
       <div className="container-full flex ">
-        <section id="projects" className="projects my-12 text-sky-50 ">
+        <section id="projects" className="projects my-12 text-sky-50 w-full">
           <div className="container mx-auto pb-4">
             <h2 className="text-4xl text-sky-300 font-bold pb-4 mt-20 tracking-wider">
               Projects
@@ -44,22 +44,22 @@ export default function Home() {
             <h2 className="text-4xl text-sky-300 font-bold pb-4 mt-20 tracking-wider">
               About me
             </h2>
-            <p className="text-xl pb-4 leading-8 tracking-wide w-[50ch]">
+            <p className="text-xl pb-4 leading-8 tracking-wide max-w-[50ch]">
               I graduated from Southern Crescent Technical College in 2019 with
               a dual diploma in Web Design/Web Development and Computer
               Programming.
             </p>
-            <p className="text-xl pb-4 leading-8 tracking-wide w-[50ch]">
+            <p className="text-xl pb-4 leading-8 tracking-wide max-w-[50ch]">
               For the past two years, I worked for a company called Polyglot.
               Providing high quality WordPress websites to clients around the
               country. With the occasional React projects.
             </p>
-            <p className="text-xl pb-4 leading-8 tracking-wide w-[50ch]">
+            <p className="text-xl pb-4 leading-8 tracking-wide max-w-[50ch]">
               My strengths are in front-end development, utilizing both CSS and
               JavaScript to breath life into designs. As a bonus, I know enough
               back-end to be dangerous 😎
             </p>
-            <p className="text-xl pb-4 leading-8 tracking-wide w-[50ch]">
+            <p className="text-xl pb-4 leading-8 tracking-wide max-w-[50ch]">
               I&apos;m looking for a new position, where I can work with cool
               people to build awesome things!
             </p>
@@ -72,7 +72,7 @@ export default function Home() {
             <h2 className="text-4xl text-sky-300 font-bold pb-4 mt-20 tracking-wider">
               Tech & Tools
             </h2>
-            <div className="tech-stack basis-full grid grid-cols-2 mt-6 gap-4">
+            <div className="tech-stack basis-full grid md:grid-cols-2 grid-cols-1 mt-6 gap-4">
               <div className=" p-4 rounded-lg  shadow-lg bg-sky-50">
                 <h3 className="text-sky-600 text-2xl font-semibold tracking-wide">
                   My Preffered Skills & Tools
@@ -128,9 +128,9 @@ export default function Home() {
         </section>
         <section></section>
       </div>
-      <footer className="container mx-auto mt-48 mb-12  rounded-lg shadow-slate-200">
+      <footer className="container mx-auto mt-48 mb-12 px-4  rounded-lg shadow-slate-200">
         <section className="tools flex flex-col">
-          <div className="flex flex-wrap items-center text-xl pb-4">
+          <div className="flex flex-wrap items-center text-xl p-4">
             This site was built with Next.js, Tailwind, and TypeScript{" "}
             <span className="ml-2">
               <IconLink href="https://github.com/SilasCundiff/SilasCundiff.com">

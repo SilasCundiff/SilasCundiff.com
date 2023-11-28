@@ -17,15 +17,17 @@ export type Project = {
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <div className="card p-4">
-      <div className="rounded-lg shadow-lg bg-sky-50 text-sky-950 relative md:min-w-[740px] min-w-300 ">
+      <div className="rounded-lg shadow-lg bg-sky-50 text-sky-950 relative md:min-w-[740px] max-w-[300px]">
         <img
           src={project.imgUrl}
-          className="card-img-top w-full h-[600px] object-cover rounded-lg"
+          className="card-img-top w-full md:h-[600px] object-cover rounded-t-lg md:rounded-lg"
           alt={project.title}
         />
-        <div className="opacity-0 w-full flex flex-col p-4 hover:opacity-100 transition-opacity card-body absolute z-10 inset-0 rounded-lg bg-sky-100 bg-opacity-75 backdrop-blur">
+        <div className="md:opacity-0 w-full flex flex-col p-4 md:hover:opacity-100 transition-opacity card-body relative md:absolute z-10 inset-0 rounded-lg bg-sky-100 bg-opacity-75 backdrop-blur">
           <div className="flex justify-between items-baseline mb-4">
-            <h3 className="card-title text-4xl font-bold">{project.title}</h3>
+            <h3 className="card-title md:text-4xl text-2xl font-bold">
+              {project.title}
+            </h3>
             <div className="flex gap-2">
               {project.url && (
                 <>
@@ -69,7 +71,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             )}
           </div>
           <div className="py-2 px-2 border-t-sky-950 border-t-2  mt-auto">
-            <ul className="skill-list flex gap-4">
+            <ul className="skill-list flex md:flex-row flex-col md:gap-4 ">
               {project.skills.map((skill, i) => (
                 <li key={skill + i}>{skill}</li>
               ))}
