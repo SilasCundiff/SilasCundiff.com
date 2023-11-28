@@ -1,6 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import debounce from "../utils/debounce";
+import IconLink from "./IconLink";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 // <FontAwesomeIcon icon="fa-brands fa-linkedin" />
 const Navbar = () => {
@@ -78,7 +81,9 @@ const Navbar = () => {
               />
             </g>
           </svg>
-          <span className="text-4xl font-semibold">Silvanus Designs</span>
+          <span className="text-4xl ml-1 font-semibold tracking-wider">
+            Silas Cundiff
+          </span>
         </a>
         <nav className="flex items-center space-x-8">
           <a className="font-light text-xl" href="#projects">
@@ -87,6 +92,21 @@ const Navbar = () => {
           <a className="font-light text-xl" href="#about">
             About
           </a>
+          <div className="flex gap-2">
+            {/* socials for github and linkedin */}
+            <IconLink
+              href="https://github.com/SilasCundiff"
+              variant={scrolledFromTop ? "black" : "white"}
+            >
+              <FontAwesomeIcon icon={faGithub} size="lg" />
+            </IconLink>
+            <IconLink
+              href="https://www.linkedin.com/in/silascundiff/"
+              variant={scrolledFromTop ? "black" : "white"}
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="lg" />
+            </IconLink>
+          </div>
         </nav>
       </div>
     </header>

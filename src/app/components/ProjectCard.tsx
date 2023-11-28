@@ -17,7 +17,7 @@ export type Project = {
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <div className="card p-4">
-      <div className="rounded-lg shadow-lg bg-sky-50 text-sky-950 relative md:min-w-[600px] min-w-300">
+      <div className="rounded-lg shadow-lg bg-sky-50 text-sky-950 relative md:min-w-[740px] min-w-300 ">
         <img
           src={project.imgUrl}
           className="card-img-top w-full h-[600px] object-cover rounded-lg"

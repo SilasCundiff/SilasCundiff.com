@@ -73,11 +73,11 @@ export const projects = [
   {
     title: "Zelena Cidx importer - Real Estate",
     description:
-      "I was given the task to create a frontend tool our developers could use to reimport MLS data for listing that were out of sync on our various MLS websites. Unfortunately, I can't show the full working site because it requires VPN access, but I can show the UI and explain some of the code.",
+      "I was given the task to create a frontend tool our developers could use to reimport MLS data for listing that were out of sync on our various MLS websites. Unfortunately, I can't show the full working site because it requires VPN access.",
     challenge:
       "We wanted something fast that could remotely call backend functions if needed. We also wanted to be able to see the status of each listing as it was being imported.",
     outcome:
-      "I designed and developed the frontend UI completely from scratch in React and Tailwind, and use gRPC to communicate with a go backend. I created some of the backend functionality as well, allowing users to search for listing in our database and displaying their information in search results.",
+      "I designed and developed the frontend UI completely from scratch in React and Tailwind, and used gRPC to communicate with a go backend that I helped create.",
     imgUrl: "./assets/Zelena.png",
     skills: ["React", "Tailwind", "gRPC", "Go", "Docker", "mongoDB"],
   },
