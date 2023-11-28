@@ -12,11 +12,14 @@ export const projects = [
   {
     title: "My Previous Portfolio",
     description:
-      "Created with Next, Styled Components, and lottie, I created this portfolio over two years ago, and while I still like it, I wanted to create a more concise portfolio.",
-    url: "https://silascundiff.com",
+      "This is a portfolio I designed and developed over two years ago. I'm still proud of what I created, but I've learned a lot since then and I wanted to create something that better represented my current skillset.",
+    challenge:
+      "I wanted to create a portfolio that was unique and showcased my skills as a developer and designer.",
+    outcome:
+      "I used various techniques to create a artistic site with a fancy lottie darkmode/lightmode toggle and several other animations. I feel less like I need to prove myself now, so I've opted for a more minimalistic approach with my current portfolio.",
+    url: "https://silvanusdesign.com/",
     githubUrl: "https://github.com/SilasCundiff/silascundiff",
-    imgUrl:
-      "https://images.unsplash.com/photo-1701007633412-e519020c7c22?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D",
+    imgUrl: "./assets/SilasCundiffOld.png",
     skills: ["React", "Next", "Styled Components", "Lottie"],
   },
   {
