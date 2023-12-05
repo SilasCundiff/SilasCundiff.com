@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Carousel from "./components/Carousel";
-import IconLink from "./components/IconLink";
+import Carousel from "../../components/Carousel";
+import IconLink from "../../components/IconLink";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
