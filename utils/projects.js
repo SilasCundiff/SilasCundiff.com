@@ -1,17 +1,5 @@
 export const projects = [
   {
-    title: "Zenify V2",
-    description:
-      "Zenify V2 is a complete recreation (Heavily WIP) of my first Spotify Particle Visualizer app. It uses Spotify API and OAuth, and Particle JS. The Particles in the background will change based on the music.",
-    challenge:
-      "The hard part isn't the OAuth, or the Spotify API. It's getting the visualizer to sync with the song.",
-    outcome:
-      "The outcome is still a work in progress. I know exactly what needs to be done to finish it, since I've already done it in the past with the previous Zenify. I just need to find the time to finish it.",
-    githubUrl: "https://github.com/SilasCundiff/ZenifyV2",
-    imgUrl: "./assets/ZenifyV2.png",
-    skills: ["React", "Spotify API", "Particle.js", "Styled Components"],
-  },
-  {
     title: "My Previous Portfolio",
     description:
       "This is a portfolio I designed and developed over two years ago. I'm still proud of what I created, but I've learned a lot since then and I wanted to create something that better represented my current skillset.",
@@ -47,6 +35,19 @@ export const projects = [
     githubUrl: "https://github.com/SilasCundiff/cuisinequest--next",
     imgUrl: "./assets/CuisineQuestV2.png",
     skills: ["React", "Next", "Tailwind", "Spoonacular API", "Firebase"],
+  },
+  {
+    title: "Zenify V2",
+    description:
+      "Zenify V2 is a complete recreation (Heavily WIP) of my first Spotify Particle Visualizer app. It uses Spotify API and OAuth, and Particle JS. The Particles in the background will change based on the music.",
+    challenge:
+      "The hard part isn't the OAuth, or the Spotify API. It's getting the visualizer to sync with the song.",
+    outcome:
+      "The outcome is still a work in progress. I know exactly what needs to be done to finish it, since I've already done it in the past with the previous Zenify. I just need to find the time to finish it.",
+    githubUrl: "https://github.com/SilasCundiff/ZenifyV2",
+    url: "https://zenify.silascundiff.com/",
+    imgUrl: "./assets/ZenifyV2.png",
+    skills: ["React", "Spotify API", "Particle.js", "Styled Components"],
   },
   {
     title: "Rhonda Haran",
