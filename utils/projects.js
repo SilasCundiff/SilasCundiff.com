@@ -37,17 +37,24 @@ export const projects = [
     skills: ["React", "Next", "Tailwind", "Spoonacular API", "Firebase"],
   },
   {
-    title: "Zenify V2",
+    title: "Zenify V3",
     description:
-      "Zenify V2 is a complete recreation (Heavily WIP) of my first Spotify Particle Visualizer app. It uses Spotify API and OAuth, and Particle JS. The Particles in the background will change based on the music.",
+      "Zenify V3 is a music visualizer that syncs with your Spotify account. Allowing you to play music in your browser and watch the visualizer react to the music.",
     challenge:
-      "The hard part isn't the OAuth, or the Spotify API. It's getting the visualizer to sync with the song.",
+      "Syncing Spotify's audio analysis with the audio playback. Spotify doesn't provide a way to interface with the Audio API buffer, so I needed to figure out a way utilize the JSON the api provides to manipulate the particles.",
     outcome:
-      "The outcome is still a work in progress. I know exactly what needs to be done to finish it, since I've already done it in the past with the previous Zenify. I just need to find the time to finish it.",
-    githubUrl: "https://github.com/SilasCundiff/ZenifyV2",
+      "The app is fully functional, allowing you play music, to use the debug tool to change the shapes, and all while being mobile friendly.",
+    githubUrl: "https://github.com/SilasCundiff/zenify-three",
     url: "https://zenify.silascundiff.com/",
-    imgUrl: "./assets/ZenifyV2.png",
-    skills: ["React", "Spotify API", "Particle.js", "Styled Components"],
+    imgUrl: "./assets/Zenify-three.png",
+    skills: [
+      "React",
+      "Spotify API",
+      "Three.js",
+      "Tailwind",
+      "Shaders",
+      "NextJS",
+    ],
   },
   {
     title: "Rhonda Haran",

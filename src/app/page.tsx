@@ -26,6 +26,14 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ACyLbmm4WdM?si=DLMrnz2ViPDRRZG5"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
         </div>
       </section>
       <div className="container-full flex ">
@@ -34,6 +42,11 @@ export default function Home() {
             <h2 className="text-4xl text-sky-300 font-bold pb-4 mt-20 tracking-wider">
               Projects
             </h2>
+          </div>
+          <div>
+            <h3 className="text-3xl text-sky-300 font-bold pb-4 mt-20 tracking-wider">
+              Capstone Project
+            </h3>
           </div>
           <Carousel />
         </section>
