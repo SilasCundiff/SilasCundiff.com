@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Carousel from "../../components/Carousel";
 import IconLink from "../../components/IconLink";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
+import { faLaptop } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -26,14 +28,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/ACyLbmm4WdM?si=DLMrnz2ViPDRRZG5"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
         </div>
       </section>
       <div className="container-full flex ">
@@ -43,10 +37,117 @@ export default function Home() {
               Projects
             </h2>
           </div>
-          <div>
-            <h3 className="text-3xl text-sky-300 font-bold pb-4 mt-20 tracking-wider">
-              Capstone Project
-            </h3>
+          <div
+            className="container
+          mx-auto pb-4"
+          >
+            <div className="">
+              <div>
+                <h3 className="text-3xl text-sky-300 font-bold pb-4 mt-4 tracking-wider">
+                  Zenify Three
+                </h3>
+                <p className="max-w-[50ch] pb-4">
+                  An online audio visualizer that uses the Spotify API and
+                  Three.js to allow users to zen out to their favorite songs.
+                </p>
+                <p className="pb-4 max-w-[50ch]">
+                  Zenify 3 is a complete rewrite of the{" "}
+                  <Link
+                    className="text-sky-400"
+                    href={"https://github.com/SilasCundiff/zenify"}
+                  >
+                    React app
+                  </Link>{" "}
+                  I made over 4 years ago.
+                </p>
+                <p className="mb-4 max-w-[50ch]">
+                  Now, armed with years of experience, and a dream of my perfect
+                  audio visualizer, I present Zenify Three.
+                </p>
+              </div>
+              <div className="relative h-0 pb-[56.25%] rounded-lg">
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded-lg"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/ACyLbmm4WdM?si=DLMrnz2ViPDRRZG5"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+            <p className="mt-4 pb-4">
+              And, the video is less visually impressive due to framerate
+              limitations and color de-saturation!
+            </p>
+            <div className="text-2xl flex space-x-4">
+              <IconLink href="https://zenify.silascundiff.com">
+                <span className="mr-2">GitHub </span>
+                <FontAwesomeIcon icon={faGithub} size="1x" />
+              </IconLink>
+              <IconLink href="https://github.com/SilasCundiff/zenify-three">
+                <span className="mr-2">Live Site </span>
+                <FontAwesomeIcon icon={faLaptop} size="1x" />
+              </IconLink>
+            </div>
+            <p className="text-xs">
+              The site requires a Spotify premium subscription due to API
+              limitations.
+            </p>
+
+            <div className="bg-sky-50 p-4 rounded-lg mt-4 text-sky-950">
+              <h2 className="text-sky-600 text-2xl font-semibold tracking-wide">
+                The details
+              </h2>
+              <p className="pb-4">
+                TL;DR - Spotify makes it very difficult to create a real-time
+                audio visualizer.
+              </p>
+              <p className="pb-2">The challenge to overcome</p>
+              <p className="pb-2">
+                Spotify does not allow you to interface their playback with the
+                Web Audio API used by most browser based visualizers. This
+                presents a very difficult problem, because the Web Audio API
+                does the heavy lifting for real time song analysis.
+              </p>
+              <p className="pb-2">
+                Instead, they provide an API endpoint to retrieve song analysis
+                for a track, which just returns a JSON object with data. This
+                data by itself is essentially useless for real time
+                visualization, as its meant to be used for more static
+                visualizations, such as graphs or comparisons for different
+                songs.
+              </p>
+              <p className="pb-2">
+                So, I needed to find a way to get the track analysis provided by
+                the API can loop through it in real time as the audio plays.
+              </p>
+              <p className="pb-2 mt-4">The solution</p>
+              <p>
+                I discovered a repo called{" "}
+                <Link
+                  className="text-sky-700"
+                  href={"https://github.com/zachwinter/spotify-viz"}
+                >
+                  spotify-viz
+                </Link>{" "}
+                that achieves what I want, but with a small delay, and in
+                vanilla JavaScript.
+              </p>
+
+              <p>
+                I reimplemented their functionality in a way that would allow me
+                to use it with React, as well as reducing the delay by listening
+                to the Spotify Web SDK's state changes to know when to quickly
+                re-fetch/re-sync the audio.
+              </p>
+              <p>
+                The result was a class I could pass around my app to use within
+                React Three Fiber's hooks to perform real time updates to the
+                materials particles.
+              </p>
+            </div>
           </div>
           <Carousel />
         </section>
@@ -92,6 +193,7 @@ export default function Home() {
                 </h3>
                 <ul className="skill-list text-sky-950 tracking-wide">
                   <li>JavaScript/TypeScript & React/Next.js</li>
+                  <li>Three.JS/Shaders</li>
                   <li>CSS/SCSS/Tailwind/Bootstrap</li>
                   <li>WordPress (plugin, theme, and block development)</li>
                   <li>Node.js & Express</li>
@@ -115,7 +217,7 @@ export default function Home() {
                   <li>APIs, asyncronouse requests, gRPC</li>
                 </ul>
               </div>
-              <div className=" p-4 rounded-lg  shadow-lg bg-sky-50">
+              {/* <div className=" p-4 rounded-lg  shadow-lg bg-sky-50">
                 <h3 className="text-violet-600 text-2xl font-semibold tracking-wide">
                   Things I&apos;ve dabbled in
                 </h3>
@@ -130,12 +232,11 @@ export default function Home() {
                   Things I&apos;d love to learn
                 </h3>
                 <ul className="skill-list text-sky-950 flex gap-4 tracking-wide">
-                  <li>Three.JS</li>
                   <li>Svelte</li>
                   <li>Bun</li>
                   <li>Blender</li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

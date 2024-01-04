@@ -37,26 +37,6 @@ export const projects = [
     skills: ["React", "Next", "Tailwind", "Spoonacular API", "Firebase"],
   },
   {
-    title: "Zenify V3",
-    description:
-      "Zenify V3 is a music visualizer that syncs with your Spotify account. Allowing you to play music in your browser and watch the visualizer react to the music.",
-    challenge:
-      "Syncing Spotify's audio analysis with the audio playback. Spotify doesn't provide a way to interface with the Audio API buffer, so I needed to figure out a way utilize the JSON the api provides to manipulate the particles.",
-    outcome:
-      "The app is fully functional, allowing you play music, to use the debug tool to change the shapes, and all while being mobile friendly.",
-    githubUrl: "https://github.com/SilasCundiff/zenify-three",
-    url: "https://zenify.silascundiff.com/",
-    imgUrl: "./assets/Zenify-three.png",
-    skills: [
-      "React",
-      "Spotify API",
-      "Three.js",
-      "Tailwind",
-      "Shaders",
-      "NextJS",
-    ],
-  },
-  {
     title: "Rhonda Haran",
     description:
       "This is one of half a dozen realty websites I helped develop for Polyglot. It uses WordPress and an in-house plugin/theme combo to pull in data from the MLS and display it in a user friendly way.",
@@ -78,15 +58,15 @@ export const projects = [
     imgUrl: "./assets/ingriffin.png",
     skills: ["WordPress", "SCSS", "WooCommerce", "PHP", "Docker"],
   },
-  {
-    title: "Zelena Cidx importer - Real Estate",
-    description:
-      "I was given the task to create a frontend tool our developers could use to reimport MLS data for listing that were out of sync on our various MLS websites. Unfortunately, I can't show the full working site because it requires VPN access.",
-    challenge:
-      "We wanted something fast that could remotely call backend functions if needed. We also wanted to be able to see the status of each listing as it was being imported.",
-    outcome:
-      "I designed and developed the frontend UI completely from scratch in React and Tailwind, and used gRPC to communicate with a go backend that I helped create.",
-    imgUrl: "./assets/Zelena.png",
-    skills: ["React", "Tailwind", "gRPC", "Go", "Docker", "mongoDB"],
-  },
+  // {
+  //   title: "Zelena Cidx importer - Real Estate",
+  //   description:
+  //     "I was given the task to create a frontend tool our developers could use to reimport MLS data for listing that were out of sync on our various MLS websites. Unfortunately, I can't show the full working site because it requires VPN access.",
+  //   challenge:
+  //     "We wanted something fast that could remotely call backend functions if needed. We also wanted to be able to see the status of each listing as it was being imported.",
+  //   outcome:
+  //     "I designed and developed the frontend UI completely from scratch in React and Tailwind, and used gRPC to communicate with a go backend that I helped create.",
+  //   imgUrl: "./assets/Zelena.png",
+  //   skills: ["React", "Tailwind", "gRPC", "Go", "Docker", "mongoDB"],
+  // },
 ];
