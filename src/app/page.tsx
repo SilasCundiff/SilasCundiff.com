@@ -139,13 +139,13 @@ export default function Home() {
               <p>
                 I reimplemented their functionality in a way that would allow me
                 to use it with React, as well as reducing the delay by listening
-                to the Spotify Web SDK's state changes to know when to quickly
-                re-fetch/re-sync the audio.
+                to the Spotify Web SDK&apos;s state changes to know when to
+                quickly re-fetch/re-sync the audio.
               </p>
               <p>
                 The result was a class I could pass around my app to use within
-                React Three Fiber's hooks to perform real time updates to the
-                materials particles.
+                React Three Fiber&apos;s hooks to perform real time updates to
+                the materials particles.
               </p>
             </div>
           </div>
