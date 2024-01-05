@@ -149,6 +149,9 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <h2 className="text-sky-300 text-2xl font-semibold tracking-wide mt-20">
+            Additional Projects
+          </h2>
           <Carousel />
         </section>
       </div>
