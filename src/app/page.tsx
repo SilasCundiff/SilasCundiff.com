@@ -124,7 +124,7 @@ export default function Home() {
                 the API can loop through it in real time as the audio plays.
               </p>
               <p className="pb-2 mt-4">The solution</p>
-              <p>
+              <p className="pb-2">
                 I discovered a repo called{" "}
                 <Link
                   className="text-sky-700"
@@ -135,14 +135,13 @@ export default function Home() {
                 that achieves what I want, but with a small delay, and in
                 vanilla JavaScript.
               </p>
-
-              <p>
+              <p className="pb-2">
                 I reimplemented their functionality in a way that would allow me
                 to use it with React, as well as reducing the delay by listening
                 to the Spotify Web SDK&apos;s state changes to know when to
                 quickly re-fetch/re-sync the audio.
               </p>
-              <p>
+              <p className="pb-2">
                 The result was a class I could pass around my app to use within
                 React Three Fiber&apos;s hooks to perform real time updates to
                 the materials particles.
